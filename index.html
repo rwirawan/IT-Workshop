@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bamboo</title>
+
+    <style>
+      body {
+        background-color: lightgreen;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+      }
+
+      div {
+        margin: 50px;
+        border: 20px solid black;
+        padding: 80px;
+        background-color: yellow;
+      }
+
+      h1 {
+        text-align: center;
+        text-transform: uppercase;
+        color: black;
+      }
+
+      p {
+        text-indent: 50px;
+        text-align: justify;
+        letter-spacing: 3px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #008cba;
+      }
+    </style>
+  </head>
+  <body id="demo">
+    
+    <h6>Today's date is " <span id="todayDate"></span></h1>
+
+    <h1>Lessons from The Chinese Bamboo</h1>
+
+    <img id="myImage" src=images/day.png alt="Chinese Bamboo" style="width: 100%" />
+    <div>
+      <p>Some years ago I've heard the Chinese bamboo story. There is something amazing about Chinese bamboo and the way it grows. Once you plant it, you need to water it, nurture it, and fertilize it every day. But nothing happens in the first year. You do the same thing the next year, and still, nothing happens. That's right, you see no results for 4 long years!</p>
+
+      <p>I've discovered that the same thing happens in life, doesn't it? If you want to achieve long-term success, have great relationships, and get everything you want in life, you need to have a solid foundation to support those things – your character, your values, your attitude. It all starts with YOU. Become the right kind of person and you will do the right things that will allow you to achieve what you want.</p>
+
+      <ul>
+        <li>Do you do the right thing when nobody is watching?</li>
+        <li>Are you trustworthy?</li>
+        <li>Do you keep promises?</li>
+        <li>Do you encourage others or put them down?</li>
+        <li>Do your words align with your actions or contradict them?</li>
+        <li>Have you discovered your purpose in life and defined what success means to you?</li>
+      </ul>
+
+      <h1>References:</h1>
+      <ul>
+        <li><a href="https://timewiser.com/blog/powerful-life-lessons-chinese-bamboo-story/" targetr="_blank">3 Powrfull Life Lessons from The Chinese Bamboo</a></li>
+      </ul>
+    </div>
+    <button onclick="document.getElementById('myImage').src='images/day.png'">Turn on the sun</button>
+
+    <button onclick="document.getElementById('myImage').src='images/night.png'">Turn off the sun</button>
+
+    <button type="button" onclick="document.getElementById('demo').style.fontSize='25px'">Big Font</button>
+
+    <button type="button" onclick="document.getElementById('demo').style.fontSize='20px'">Small Font</button>
+  </body>
+
+  <script>
+    let d = new Date()
+    document.getElementById("todayDate").innerHTML = d
+  </script>
+</html>
